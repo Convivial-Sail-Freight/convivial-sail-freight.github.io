@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convivial Sail Freight</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-illustration">
+                <!-- Sailboat SVG -->
+                <svg viewBox="0 0 200 160" class="sailboat-hero" aria-hidden="true">
+                    <path d="M30 140 Q100 130 170 140" stroke="var(--ocean)" stroke-width="3" fill="none" class="wave"/>
+                    <path d="M50 140 Q100 125 150 140" stroke="var(--ocean-light)" stroke-width="2" fill="none" class="wave wave-2"/>
+                    <!-- Hull -->
+                    <path d="M60 115 L80 135 L120 135 L140 115 Z" fill="var(--wood)" stroke="var(--ink)" stroke-width="2"/>
+                    <!-- Mast -->
+                    <line x1="100" y1="115" x2="100" y2="35" stroke="var(--ink)" stroke-width="3"/>
+                    <!-- Sail -->
+                    <path d="M102 40 L102 110 L145 110 Z" fill="var(--cream)" stroke="var(--ink)" stroke-width="2"/>
+                    <!-- Crates -->
+                    <rect x="75" y="105" width="15" height="12" fill="var(--earth)" stroke="var(--ink)" stroke-width="1.5"/>
+                    <rect x="92" y="105" width="15" height="12" fill="var(--green)" stroke="var(--ink)" stroke-width="1.5"/>
+                    <rect x="109" y="105" width="15" height="12" fill="var(--earth)" stroke="var(--ink)" stroke-width="1.5"/>
+                </svg>
+            </div>
+            <h1>Convivial Sail Freight</h1>
+            <p class="tagline">A decentralized crew exploring low-energy, low-carbon, high-relationship ways of living on Narragansett Bay</p>
+            <p class="sub-tagline">No bosses, no headquarters. Just folks figuring it out together. Come aboard.</p>
+        </div>
+        <div class="scroll-hint">
+            <span>scroll</span>
+            <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                <path d="M12 5 L12 19 M5 12 L12 19 L19 12" stroke="currentColor" stroke-width="2" fill="none"/>
+            </svg>
+        </div>
+    </header>
+
+    <!-- Vision Section -->
+    <section class="section vision" id="vision">
+        <div class="section-inner">
+            <h2 class="section-title">What Is This?</h2>
+            <div class="vision-grid">
+                <div class="vision-card">
+                    <div class="card-icon">
+                        <!-- Compass/experiment icon -->
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <circle cx="24" cy="24" r="20" fill="none" stroke="var(--ink)" stroke-width="2"/>
+                            <circle cx="24" cy="24" r="3" fill="var(--ink)"/>
+                            <path d="M24 8 L24 14" stroke="var(--ink)" stroke-width="2"/>
+                            <path d="M24 34 L24 40" stroke="var(--ink)" stroke-width="2"/>
+                            <path d="M8 24 L14 24" stroke="var(--ink)" stroke-width="2"/>
+                            <path d="M34 24 L40 24" stroke="var(--ink)" stroke-width="2"/>
+                            <path d="M24 24 L32 16" stroke="var(--rust)" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Experimental & DIY</h3>
+                    <p>All of this is an experiment. We're a ragtag assembly of sailors, farmers, tinkerers, teachers, and curious folks. No central authority&mdash;just people organizing themselves.</p>
+                </div>
+                <div class="vision-card">
+                    <div class="card-icon">
+                        <!-- Handshake/mutual aid icon -->
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <path d="M8 28 L16 20 L24 24 L32 18 L40 26" stroke="var(--ink)" stroke-width="2" fill="none"/>
+                            <circle cx="16" cy="20" r="3" fill="var(--ocean)"/>
+                            <circle cx="24" cy="24" r="3" fill="var(--green)"/>
+                            <circle cx="32" cy="18" r="3" fill="var(--rust)"/>
+                        </svg>
+                    </div>
+                    <h3>Many Models</h3>
+                    <p>Pay-what-you-can, mutual aid, gift economy, fair wages&mdash;all valid. No rigid blueprint, no top-down rules. We're testing what works, together.</p>
+                </div>
+                <div class="vision-card">
+                    <div class="card-icon">
+                        <!-- People/connection icon -->
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <circle cx="16" cy="16" r="6" fill="none" stroke="var(--ink)" stroke-width="2"/>
+                            <circle cx="32" cy="16" r="6" fill="none" stroke="var(--ink)" stroke-width="2"/>
+                            <circle cx="24" cy="32" r="6" fill="none" stroke="var(--ink)" stroke-width="2"/>
+                            <line x1="20" y1="20" x2="22" y2="28" stroke="var(--ink)" stroke-width="1.5" stroke-dasharray="2 2"/>
+                            <line x1="28" y1="20" x2="26" y2="28" stroke="var(--ink)" stroke-width="1.5" stroke-dasharray="2 2"/>
+                            <line x1="22" y1="16" x2="26" y2="16" stroke="var(--ink)" stroke-width="1.5" stroke-dasharray="2 2"/>
+                        </svg>
+                    </div>
+                    <h3>High-Relationship</h3>
+                    <p>The real cargo is connection. We're building relationships, giving kids a sense of adventure, and creating community on the water.</p>
+                </div>
+                <div class="vision-card">
+                    <div class="card-icon">
+                        <!-- History/book icon -->
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <path d="M12 8 L12 40 L36 40 L36 8 Z" fill="none" stroke="var(--ink)" stroke-width="2"/>
+                            <path d="M12 8 Q24 12 36 8" stroke="var(--ink)" stroke-width="2" fill="none"/>
+                            <line x1="18" y1="18" x2="30" y2="18" stroke="var(--ink)" stroke-width="1.5"/>
+                            <line x1="18" y1="24" x2="30" y2="24" stroke="var(--ink)" stroke-width="1.5"/>
+                            <line x1="18" y1="30" x2="26" y2="30" stroke="var(--ink)" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <h3>Looking Backward</h3>
+                    <p>Sail cargo has history here. We're learning how pre-fossil-fuel economies worked and asking what those techniques might teach us about a lower-energy future.</p>
+                </div>
+            </div>
+            <blockquote class="pull-quote">
+                "Pedagogy disguised as logistics&hellip; or is it vice-versa?"
+            </blockquote>
+            <blockquote class="pull-quote pull-quote-secondary">
+                "Quiet rebellion against the old grid, one knot at a time."
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- What We Do Section -->
+    <section class="section activities" id="activities">
+        <div class="section-inner">
+            <h2 class="section-title">What We Do</h2>
+            <div class="activities-list">
+                <article class="activity">
+                    <div class="activity-icon">
+                        <!-- Crate icon -->
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <rect x="8" y="16" width="32" height="24" fill="none" stroke="var(--ink)" stroke-width="2"/>
+                            <line x1="8" y1="28" x2="40" y2="28" stroke="var(--ink)" stroke-width="2"/>
+                            <line x1="24" y1="16" x2="24" y2="40" stroke="var(--ink)" stroke-width="2"/>
+                            <path d="M20 8 L24 16 L28 8" stroke="var(--ink)" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    <div class="activity-content">
+                        <h3>Cargo Runs</h3>
+                        <p>Fresh produce, repair parts, solar kits, zines&mdash;whatever needs moving across the bay. We haul your goods by wind and tide.</p>
+                    </div>
+                </article>
+
+                <article class="activity">
+                    <div class="activity-icon">
+                        <!-- Wrench icon -->
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <path d="M12 36 L28 20" stroke="var(--ink)" stroke-width="3"/>
+                            <circle cx="32" cy="16" r="8" fill="none" stroke="var(--ink)" stroke-width="2"/>
+                            <path d="M28 12 L24 16 L28 20" stroke="var(--ink)" stroke-width="2" fill="none"/>
+                            <rect x="8" y="34" width="8" height="8" rx="2" fill="var(--rust)" stroke="var(--ink)" stroke-width="2" transform="rotate(-45 12 38)"/>
+                        </svg>
+                    </div>
+                    <div class="activity-content">
+                        <h3>Roving Repair</h3>
+                        <p>A floating tool library. We dock wherever, pop open the lids, and help folks fix their outboards, radios, and whatever else needs mending. Not charity&mdash;commons.</p>
+                    </div>
+                </article>
+
+                <article class="activity">
+                    <div class="activity-icon">
+                        <!-- Workshop/people icon -->
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <circle cx="16" cy="14" r="6" fill="none" stroke="var(--ink)" stroke-width="2"/>
+                            <circle cx="32" cy="14" r="6" fill="none" stroke="var(--ink)" stroke-width="2"/>
+                            <path d="M8 40 L8 30 Q8 24 16 24 Q24 24 24 30 L24 40" fill="none" stroke="var(--ink)" stroke-width="2"/>
+                            <path d="M24 40 L24 30 Q24 24 32 24 Q40 24 40 30 L40 40" fill="none" stroke="var(--ink)" stroke-width="2"/>
+                            <rect x="18" y="32" width="12" height="8" fill="var(--cream)" stroke="var(--ink)" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="activity-content">
+                        <h3>Workshops</h3>
+                        <p><strong>Build-a-Boat Saturdays</strong> &middot; <strong>Cargo-Repair Clinics</strong> &middot; <strong>Tide-to-Table Evenings</strong> &middot; <strong>Mesh-Net Nights</strong>. Kids get experience, adults get skills, everyone gets community.</p>
+                    </div>
+                </article>
+
+                <article class="activity">
+                    <div class="activity-icon">
+                        <!-- Magnifying glass/research icon -->
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <circle cx="20" cy="20" r="12" fill="none" stroke="var(--ink)" stroke-width="2"/>
+                            <line x1="28" y1="28" x2="40" y2="40" stroke="var(--ink)" stroke-width="3"/>
+                            <path d="M16 16 Q20 12 24 16" stroke="var(--ocean)" stroke-width="2" fill="none"/>
+                            <circle cx="20" cy="22" r="2" fill="var(--ocean)"/>
+                        </svg>
+                    </div>
+                    <div class="activity-content">
+                        <h3>Research</h3>
+                        <p>Cargo runs double as surveys. We monitor water quality, check dock infrastructure, map shoals. All data open-source, scribbled on deck and shared freely.</p>
+                    </div>
+                </article>
+
+                <article class="activity">
+                    <div class="activity-icon">
+                        <!-- Sharing/exchange icon -->
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <circle cx="12" cy="24" r="6" fill="none" stroke="var(--ink)" stroke-width="2"/>
+                            <circle cx="36" cy="24" r="6" fill="none" stroke="var(--ink)" stroke-width="2"/>
+                            <path d="M18 22 L30 22 M26 18 L30 22 L26 26" stroke="var(--ink)" stroke-width="2" fill="none"/>
+                            <path d="M30 26 L18 26 M22 22 L18 26 L22 30" stroke="var(--ink)" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    <div class="activity-content">
+                        <h3>Skill-Sharing</h3>
+                        <p>Not just boating&mdash;cooking, craft-making, foraging, mending, fermenting. Bring what you know, learn what you don't. The bay is just the context for connection.</p>
+                    </div>
+                </article>
+
+                <article class="activity">
+                    <div class="activity-icon">
+                        <!-- History/anchor icon -->
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <circle cx="24" cy="12" r="6" fill="none" stroke="var(--ink)" stroke-width="2"/>
+                            <line x1="24" y1="18" x2="24" y2="40" stroke="var(--ink)" stroke-width="2"/>
+                            <path d="M12 32 L24 40 L36 32" stroke="var(--ink)" stroke-width="2" fill="none"/>
+                            <line x1="16" y1="24" x2="32" y2="24" stroke="var(--ink)" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="activity-content">
+                        <h3>History Lessons</h3>
+                        <p>Narragansett Bay has centuries of sail cargo history. We explore it together&mdash;learning from the past to imagine a different future.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="section-inner">
+            <h2 class="section-title">Current Projects</h2>
+            <p class="projects-intro">These are experiments in progress. Want to help build them?</p>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <circle cx="24" cy="16" r="10" fill="var(--rust)" stroke="var(--ink)" stroke-width="2"/>
+                            <path d="M24 6 L24 2" stroke="var(--ink)" stroke-width="2"/>
+                            <path d="M14 10 L10 6" stroke="var(--ink)" stroke-width="2"/>
+                            <path d="M34 10 L38 6" stroke="var(--ink)" stroke-width="2"/>
+                            <rect x="16" y="26" width="16" height="16" fill="none" stroke="var(--ink)" stroke-width="2"/>
+                            <line x1="20" y1="34" x2="28" y2="34" stroke="var(--ink)" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Solar Dock Kiosks</h3>
+                    <p>Phone charging stations powered by the sun, with LoRa radios for off-grid communication. Built by kids and adults together.</p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <path d="M8 36 Q24 20 40 36" stroke="var(--ocean)" stroke-width="3" fill="none"/>
+                            <path d="M8 30 Q24 14 40 30" stroke="var(--ocean-light)" stroke-width="2" fill="none"/>
+                            <rect x="18" y="10" width="12" height="20" fill="none" stroke="var(--ink)" stroke-width="2"/>
+                            <line x1="18" y1="16" x2="30" y2="16" stroke="var(--ink)" stroke-width="1"/>
+                            <circle cx="24" cy="24" r="2" fill="var(--rust)"/>
+                        </svg>
+                    </div>
+                    <h3>Tide & Flooding Monitors</h3>
+                    <p>Simple sensors to track tide levels and alert folks if boats at dock have taken on water. Community resilience infrastructure.</p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <circle cx="24" cy="28" r="12" fill="none" stroke="var(--ink)" stroke-width="2"/>
+                            <circle cx="24" cy="28" r="4" fill="var(--ink)"/>
+                            <path d="M16 28 L8 28" stroke="var(--ink)" stroke-width="2"/>
+                            <path d="M32 28 L40 28" stroke="var(--ink)" stroke-width="2"/>
+                            <path d="M20 10 L24 18 L28 10 Z" fill="var(--green)" stroke="var(--ink)" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Pedal-Powered Propulsion</h3>
+                    <p>When the wind ghosts out, can we pedal instead of motor? We're testing rigs, measuring energy, and having fun doing it.</p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <path d="M8 40 L16 36 L16 20 L32 20 L32 36 L40 40 Z" fill="none" stroke="var(--ink)" stroke-width="2"/>
+                            <path d="M12 38 Q24 32 36 38" stroke="var(--ocean)" stroke-width="2" fill="none"/>
+                            <rect x="20" y="24" width="8" height="8" fill="var(--rust)" stroke="var(--ink)" stroke-width="1.5"/>
+                            <circle cx="32" cy="14" r="4" fill="none" stroke="var(--ink)" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Floating Repair Cafe</h3>
+                    <p>A boat kitted out with tools for motors, battery installations, electronics. We come to you. Bring your broken stuff.</p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <path d="M8 38 L16 34 L16 18 L32 18 L32 34 L40 38 Z" fill="none" stroke="var(--ink)" stroke-width="2"/>
+                            <path d="M12 36 Q24 30 36 36" stroke="var(--ocean)" stroke-width="2" fill="none"/>
+                            <ellipse cx="24" cy="26" rx="4" ry="3" fill="var(--wood)" stroke="var(--ink)" stroke-width="1.5"/>
+                            <path d="M22 22 L24 18 L26 22" stroke="var(--ink)" stroke-width="1.5" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3>Floating Cafe</h3>
+                    <p>Coffee and food served from the water. Because why not? Community gathering, afloat.</p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <rect x="8" y="20" width="32" height="20" fill="none" stroke="var(--ink)" stroke-width="2"/>
+                            <line x1="8" y1="28" x2="40" y2="28" stroke="var(--ink)" stroke-width="1" stroke-dasharray="4 2"/>
+                            <path d="M12 12 L20 20" stroke="var(--ink)" stroke-width="2"/>
+                            <path d="M36 12 L28 20" stroke="var(--ink)" stroke-width="2"/>
+                            <circle cx="12" cy="10" r="3" fill="var(--rust)"/>
+                            <circle cx="36" cy="10" r="3" fill="var(--green)"/>
+                        </svg>
+                    </div>
+                    <h3>Single-Sheet Boat Building</h3>
+                    <p>One sheet of plywood, some nails, a weekend. Build something that actually floats. Teach buoyancy while you're at it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Involved Section -->
+    <section class="section involved" id="involved">
+        <div class="section-inner">
+            <h2 class="section-title">Get Involved</h2>
+            <p class="involved-intro">This is a work in progress. We need all kinds of folks.</p>
+
+            <div class="roles-grid">
+                <div class="role">
+                    <h3>Sailors</h3>
+                    <p>Got a boat? Want to haul cargo, teach sailing, or just join the crew?</p>
+                </div>
+                <div class="role">
+                    <h3>Farmers & Producers</h3>
+                    <p>Have goods that need to move across the bay? Let's talk wind-powered logistics.</p>
+                </div>
+                <div class="role">
+                    <h3>Restaurants & Businesses</h3>
+                    <p>Want local goods delivered by sail? Interested in tide-to-table sourcing?</p>
+                </div>
+                <div class="role">
+                    <h3>Schools</h3>
+                    <p>Field trips, workshops, hands-on learning about boats, food systems, and renewable energy.</p>
+                </div>
+                <div class="role">
+                    <h3>Repair Helpers</h3>
+                    <p>Know how to fix things? Share your skills at our floating repair cafes.</p>
+                </div>
+                <div class="role">
+                    <h3>Curious Learners</h3>
+                    <p>Don't know anything yet? Perfect. Come learn with us. All skill levels welcome.</p>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <h3>Reach Out</h3>
+                <p>Drop us a line and tell us what you're curious about.</p>
+                <a href="mailto:info@waterbearfieldschool.org" class="email-link">info@waterbearfieldschool.org</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-waves">
+                <svg viewBox="0 0 400 30" preserveAspectRatio="none" aria-hidden="true">
+                    <path d="M0 15 Q50 5 100 15 T200 15 T300 15 T400 15" stroke="var(--ocean-light)" stroke-width="2" fill="none" class="wave"/>
+                    <path d="M0 20 Q50 10 100 20 T200 20 T300 20 T400 20" stroke="var(--ocean)" stroke-width="2" fill="none" class="wave wave-2"/>
+                </svg>
+            </div>
+            <p class="footer-message">"This is a work in progress. Help us shape it."</p>
+            <p class="footer-location">Narragansett Bay, Rhode Island</p>
+            <p class="footer-contact">
+                <a href="mailto:info@waterbearfieldschool.org">info@waterbearfieldschool.org</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

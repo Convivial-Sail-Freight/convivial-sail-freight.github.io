@@ -1,0 +1,1 @@
+An additional current project would be a floating repair cafe with tools necessary for repairing motors, battery installations, electronics. Another project is a floating actual cafe where we serve food and coffee, that sort of thing.
