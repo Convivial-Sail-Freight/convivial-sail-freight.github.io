@@ -102,13 +102,15 @@ img, svg {
     max-width: 800px;
 }
 
-.hero-illustration {
+.hero-video {
     margin-bottom: var(--space-md);
 }
 
-.sailboat-hero {
-    width: 200px;
+.hero-video video {
+    max-width: 280px;
     height: auto;
+    border: 3px solid var(--ink);
+    border-radius: 4px;
 }
 
 .hero h1 {
