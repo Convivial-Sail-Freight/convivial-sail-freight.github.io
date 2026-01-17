@@ -86,14 +86,12 @@ img, svg {
    ===================== */
 
 .hero {
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: var(--space-md);
-    position: relative;
+    padding: var(--space-lg) var(--space-md) var(--space-md);
     background:
         linear-gradient(180deg, var(--cream) 0%, var(--paper) 100%);
 }
@@ -102,12 +100,22 @@ img, svg {
     max-width: 800px;
 }
 
-.hero-video {
+.hero-image {
     margin-bottom: var(--space-md);
 }
 
+.hero-image img {
+    height: auto;
+    border: 3px solid var(--ink);
+    border-radius: 4px;
+}
+
+.hero-video {
+    margin-top: var(--space-md);
+    margin-bottom: 0;
+}
+
 .hero-video video {
-    max-width: 180px;
     height: auto;
     border: 3px solid var(--ink);
     border-radius: 4px;
@@ -132,24 +140,6 @@ img, svg {
     font-size: clamp(1.3rem, 4vw, 1.8rem);
     color: var(--rust);
     margin: 0;
-}
-
-.scroll-hint {
-    position: absolute;
-    bottom: var(--space-md);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    color: var(--ocean-light);
-    font-family: var(--font-hand);
-    font-size: 1rem;
-    animation: bob 2s ease-in-out infinite;
-}
-
-@keyframes bob {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(8px); }
 }
 
 /* Wave animation */
@@ -204,6 +194,7 @@ img, svg {
 
 .vision {
     background: var(--paper);
+    padding-top: var(--space-md);
 }
 
 .vision-grid {
@@ -278,12 +269,25 @@ img, svg {
 
 .activities {
     background: var(--cream);
+    padding-top: var(--space-md);
+}
+
+.section-image {
+    text-align: center;
+    margin-bottom: var(--space-md);
+}
+
+.section-image img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid var(--ink);
+    border-radius: 4px;
 }
 
 .activities-list {
     display: flex;
     flex-direction: column;
-    gap: var(--space-md);
+    gap: var(--space-sm);
 }
 
 .activity {
